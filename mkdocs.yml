@@ -1,58 +1,63 @@
-# This is the main configuration file for the MkDocs website.
-# Use hash-comments to comment out pages have not been written
-# Reference: http://www.mkdocs.org/user-guide/configuration/
-#
-site_name: Learn / MkDocs
+site_name: FAIR training handbook
 nav:
-- Home: index.md
-- Overview: overview.md
-#- Install MkDocs: install.md
-- Install MkDocs: install.md
-- MkDocs Version Differences: mkdocs-versions.md
-- New Project: new-project.md
-- Configuration: config.md
-- Edit Content: edit.md
-- Material Theme:  material-theme.md
-- Deploy Website: deploy.md
-- Use Site: use-site.md
-- Troubleshooting: troubleshooting.md
-- Resources: resources.md
-# ------- configuration properties ---------------
-# Alphabetize
-# ------------------------------------------------
-copyright:  Copyright Open Water Foundation
-# ------------------------------------------------
-# Use extra CSS to customize styles, based on theme.
-extra_css:
-  - 'css/extra-material-theme.css'
-# ------------------------------------------------
-# Google Analytics:
-# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
-extra:
-  analytics:
-    provider: google
-    property: 'G-KJFMBY739T'
-# ------------------------------------------------
-# Favicon is supposed to automatically be found:
-# - in docs/img/favicon.ico
-# - is a copy of docs/images/OWF-Logo-Favicon-32x32.ico
-# - instead, with Material them, have a different approach (see "theme" below)
-# ------------------------------------------------
-# Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
-# - Also see edit_uri if repo_url is specified
-#repo_url:  https://github.com/OpenWaterFoundation/owf-learn-mkdocs
-# ------------------------------------------------
-site_author:  Open Water Foundation
-site_description:  Open Water Foundation Learn MkDocs
-# ------------------------------------------------
-# Use Material theme:
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
+    - Home: index.md
+    - Chapters:
+      - "Preface": chapters/Preface.md
+      - "1. Why FAIR training & training materials?": chapters/chapter_01.md
+      - "2. Structure materials for FAIRness": chapters/chapter_02.md
+      - "3. Getting ready to create your materials or reuse": chapters/chapter_03.md
+      - "4. Using metadata to describe training materials": chapters/chapter_04.md
+      - "5. Get a persistent identifier for your training material": chapters/chapter_05.md
+      - "6. Make it accessible": chapters/chapter_06.md
+      - "7. Make it reusable": chapters/chapter_07.md
+      - "8. Licensing": chapters/chapter_08.md
+      - "9. Boosting discoverability": chapters/chapter_09.md
+      - "10. Recognition, acknowledgment, authorship": chapters/chapter_10.md
+    - Keywords list: keywords.md
+
 theme:
-  name: 'material'
-  favicon: 'images/OWF-Logo-Favicon-32x32.ico'
-# ------------------------------------------------
-# The following controls how URLs are created:
-# - As of MkDocs 1.0 the default is true meaning URLs to a page ABC is ABC/ rather than something/ABC.html.
-# - see:  https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
-# use_directory_urls: true
-# ------------------------------------------------
+  name: material
+  logo: assets/images/white-orange-logo.png
+  favicon: assets/images/elixir_favicon.ico
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+
+# Repository
+repo_name: ELIXIR-FAIR-Training/FAIR-training-handbook
+repo_url: https://github.com/ELIXIR-FAIR-Training/FAIR-training-handbook
+edit_uri: edit/main/docs/
+
+plugins:
+  - tags:
+      tags_file: keywords.md
+  - search
+  - bibtex:
+      bib_file: "references.bib"
+  
+
+markdown_extensions:
+  - abbr
+  - def_list
+  - footnotes
+  - tables
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - sane_lists
+  - smarty
+  - toc
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+extra_css:
+  - stylesheets/extra.css

@@ -1,45 +1,19 @@
-# Open Water Foundation / Learn MkDocs #
+Are you a developer of training material? Do you want to get more community involvement with your training material by making it **Findable** **Accessible** **Interoperable** and **Reusable** (**FAIR**)? Look no further, you are at the right (web)address! The ten [chapters](chapters/Preface.md) provide guidance on how you can FAIRify your training material. 
 
-This documentation provides resources to learn how to use the MkDocs software,
-which creates static documentation websites from Markdown source files.
-A static website can be viewed on a local computer and can be published to the web.
-Such documentation can be developed for software products such as developer and user documentation.
-Documentation can also be created for other projects where navigable documentation is desirable.
+This is an initiative of the [ELIXIR FAIR training focus group](https://elixir-europe.org/focus-groups/fair-training), and based on the paper describing the 10 simple rules for [FAIR training materials publication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007854). [@Garcia2020]
 
-This documentation has been written based on experience using MkDocs at the Open Water Foundation.
+## Directly to the chapters
 
-The documentation that you are reading has itself been created with MkDocs.
+- [Preface](chapters/Preface.md)
+- [1. Why FAIR training & training materials?](chapters/chapter_01.md)
+- [2. Structure materials for FAIRness](chapters/chapter_02.md)
+- [3. Getting ready to(reate your materials or reuse](chapters/chapter_03.md)
+- [4. Using metadata to describe training materials](chapters/chapter_04.md)
+- [5. Get a persistent identifier for your training training material](chapters/chapter_05.md)
+- [6. Make it accessible](chapters/chapter_06.md)
+- [7. Make it reusable](chapters/chapter_07.md)
+- [8. Licensing](chapters/chapter_08.md)
+- [9. Boosting discoverability](chapters/chapter_09.md)
+- [10. Recognition, acknowledgment, authorship](chapters/chapter_10.md)
 
-## About the Open Water Foundation ##
-
-The [Open Water Foundation](http://openwaterfoundation.org) is a nonprofit social enterprise that focuses
-on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
-OWF also works to advance open data tools and implementation.
-OWF has created this documentation to educate its staff, collaborators, and clients that use MkDocs for documentation.
-
-See also other [OWF learning resources](http://learn.openwaterfoundation.org).
-
-## How to Use this Documentation ##
-
-The documentation is organized in order of information and tasks necessary to setup a development environment and
-use MkDocs software.  The menu on the left lists pages in the documentation.
-The menu on the right lists sections in this page.
-If the width of the page has been made narrow, the menus may display as icons with popup menus.
-
-This documentation is not intended to be a full reference for MkDocs or Markdown but focuses on topics that
-will help understand important technical concepts and be successful with MkDocs.
-See the [Resources section](resources.md) for general information about MkDocs.
-
-## License ##
-
-The OWF Learn MkDocs website content and examples are licenses under the
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0).
-
-## Source Repository on GitHub ##
-
-The source files for this documentation are maintained in a GitHub repository:  [owf-learn-mkdocs](https://github.com/OpenWaterFoundation/owf-learn-mkdocs).
-
-## Release Notes ##
-
-See the [Release Notes in the GitHub Project](https://github.com/OpenWaterFoundation/owf-learn-mkdocs#release-notes) and
-[GitHub repository issues](https://github.com/OpenWaterFoundation/owf-learn-mkdocs/issues).
+\bibliography
