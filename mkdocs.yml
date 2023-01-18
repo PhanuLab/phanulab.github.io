@@ -1,4 +1,4 @@
-site_name: FAIR training handbook
+site_name: phanulab.github.io
 nav:
     - Home: index.md
     - Chapters:
@@ -17,16 +17,16 @@ nav:
 
 theme:
   name: material
-  logo: assets/images/white-orange-logo.png
-  favicon: assets/images/elixir_favicon.ico
+  logo: assets/images/ssrucspxwfav.png
+  favicon: assets/images/ssrucspxwfav.ico
   custom_dir: overrides
   features:
     - navigation.tabs
 
 # Repository
-repo_name: ELIXIR-FAIR-Training/FAIR-training-handbook
-repo_url: https://github.com/ELIXIR-FAIR-Training/FAIR-training-handbook
-edit_uri: edit/main/docs/
+repo_name: phanulab.github.io
+repo_url: https://github.com/PhanuLab/phanulab.github.io
+edit_uri: edit/master/docs/
 
 plugins:
   - tags:
