@@ -1,35 +1,33 @@
 site_name: phanulab.github.io
-nav:
-  - Home: index.md
-  - Academics: 
-    - "Overview": academic/overview.md
-    - "Courses":
-      - Discrete Mathematics: docs/academic/courses/mathdisc.md
-      - Data Mining Technology: docs/academic/courses/dmtech.md
-      - English for Academic and Specific Purposes: docs/academic/courses/easp.md
-    - Resouces:
-      - name of resource: docs/academic/resources/name-of-resource.md
-  - Blog:
-    - Blog index by tags: docs/blog/index.md
-    - Year 2023:
-        - Blog Post Title: docs/blog/2023-mm-dd-blog-post-title.md
-#    - Chapters:
-#      - "Preface": chapters/Preface.md
-#      - "1. Why FAIR training & training materials?": chapters/chapter_01.md
-#      - "2. Structure materials for FAIRness": chapters/chapter_02.md
-#      - "3. Getting ready to create your materials or reuse": chapters/chapter_03.md
-#      - "4. Using metadata to describe training materials": chapters/chapter_04.md
-#      - "5. Get a persistent identifier for your training material": chapters/chapter_05.md
-#      - "6. Make it accessible": chapters/chapter_06.md
-#      - "7. Make it reusable": chapters/chapter_07.md
-#      - "8. Licensing": chapters/chapter_08.md
-#      - "9. Boosting discoverability": chapters/chapter_09.md
-#      - "10. Recognition, acknowledgment, authorship": chapters/chapter_10.md
-#    - Keywords list: keywords.md
-#    - Miscellaneous:
-#     - ""
-#
 
+nav:
+ - Home: index.md
+ - Courses:
+   - Discrete Mathematics: courses/mathdisc.md
+   - Data Mining Technology: courses/dmtech.md
+   - English for Academic and Specific Purposes: courses/easp.md
+ - Lecture Notes:
+   - "DMTech-Lecture01": lecture-notes/dmtech-lect01-intro.md
+   - "EASP-Lecture01": lecture-notes/easp-lect01-intro.md
+   - "MathDisc-Lecture01": lecture-notes/mathdisc-lect01-intro.md
+ - FAIR Guide:
+     - "Preface": fair-chapters/Preface.md
+     - "1. Why FAIR training & training materials?": fair-chapters/chapter_01.md
+     - "2. Structure materials for FAIRness": fair-chapters/chapter_02.md
+     - "3. Getting ready to create your materials or reuse": fair-chapters/chapter_03.md
+     - "4. Using metadata to describe training materials": fair-chapters/chapter_04.md
+     - "5. Get a persistent identifier for your training material": fair-chapters/chapter_05.md
+     - "6. Make it accessible": fair-chapters/chapter_06.md
+     - "7. Make it reusable": fair-chapters/chapter_07.md
+     - "8. Licensing": fair-chapters/chapter_08.md
+     - "9. Boosting discoverability": fair-chapters/chapter_09.md
+     - "10. Recognition, acknowledgment, authorship": fair-chapters/chapter_10.md
+ - Blog:
+   - Blog index by tags: blog/index.md
+   - Year 2023:
+     - Blog Post Title: blog/2023-mm-dd-blog-post-title.md
+ - Keywords list: keywords.md
+  
 theme:
   name: material
   logo: assets/images/ssrucspxwfav.png

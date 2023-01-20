@@ -1,6 +1,6 @@
-# FAIR-training-handbook
+# PhanuLAB Documentation 
 
-**Any issues?** Contact Geert van Geest (@GeertvanGeest)
+**Any issues?** Contact Me(@phanulab)
 
 ## How to contribute (for non-git gurus)
 
@@ -70,4 +70,4 @@ If you commit to the branch `main` (the default branch), the website will be aut
 
 This will generate a webpage at:
 
-https://ELIXIR-FAIR-Training.github.io/FAIR-training-handbook
+https://phanulab.github.io/
