@@ -44,7 +44,7 @@ Below sections are organized as follow: current courses, course/lecture notes, p
 - [9. Boosting discoverability](fair-chapters/chapter_09.md)
 - [10. Recognition, acknowledgment, authorship](fair-chapters/chapter_10.md)
  
-## Blogs
+## Blog Posts
  
 ### Year 2023":
 - [Blog Post Title](blog/2023-mm-dd-blog-post-title.md)
