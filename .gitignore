@@ -7,6 +7,4 @@
 .Trashes
 Thumbs.db
 
-#User Generated File#
-#################
-.*.backup
+site/
