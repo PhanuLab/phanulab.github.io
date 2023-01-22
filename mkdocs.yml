@@ -22,10 +22,10 @@ nav:
      - "8. Licensing": fair-chapters/chapter_08.md
      - "9. Boosting discoverability": fair-chapters/chapter_09.md
      - "10. Recognition, acknowledgment, authorship": fair-chapters/chapter_10.md
- - Posts:
-   - Blog index by tags: posts/index.md
+ - Blog Posts:
+   - Posts index by tags: posts/index.md
    - Year 2023:
-     - Blog Post Title: blog/2023-mm-dd-blog-post-title.md
+     - Sample Blog Post Title: posts/2023-01-21-sample-blog-post-title.md
  - Keywords list: keywords.md
   
 theme:
