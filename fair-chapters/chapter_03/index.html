@@ -1,0 +1,1550 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Teaching Documentation",
+    "@id": "https://github.com/PhanuLab/phanulab.github.io",
+    "http://purl.org/dc/terms/conformsTo": {
+        "@type": "CreativeWork",
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+    },
+    "description": "Forked Handbook for making training materials FAIR",
+    "keywords": "FAIR, OPEN, Bioinformatics, Teaching, Train-the-trainer",
+    "name": "SSRUCS PhanuLab: Everyday CS Learning Portal",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
+
+    
+      
+        <title>3. Getting ready to create your materials or reuse - phanulab.github.io</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#description" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="phanulab.github.io" class="md-header__button md-logo" aria-label="phanulab.github.io" data-md-component="logo">
+      
+  <img src="../../assets/images/ssrucspxwfav.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            phanulab.github.io
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Getting ready to create your materials or reuse
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PhanuLab/phanulab.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    phanulab.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../courses/mathdisc/" class="md-tabs__link">
+        Courses
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../lecture-notes/dmtech-lect01-intro/" class="md-tabs__link">
+        Lecture Notes
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Preface/" class="md-tabs__link md-tabs__link--active">
+        FAIR Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../posts/" class="md-tabs__link">
+        Blog Posts
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../keywords/" class="md-tabs__link">
+      Keywords list
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="phanulab.github.io" class="md-nav__button md-logo" aria-label="phanulab.github.io" data-md-component="logo">
+      
+  <img src="../../assets/images/ssrucspxwfav.png" alt="logo">
+
+    </a>
+    phanulab.github.io
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PhanuLab/phanulab.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    phanulab.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Courses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Courses
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/mathdisc/" class="md-nav__link">
+        Discrete Mathematics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/dmtech/" class="md-nav__link">
+        Data Mining Technology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/easp/" class="md-nav__link">
+        English for Academic and Specific Purposes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Lecture Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Lecture Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lecture-notes/dmtech-lect01-intro/" class="md-nav__link">
+        DMTech-Lecture01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lecture-notes/easp-lect01-intro/" class="md-nav__link">
+        EASP-Lecture01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lecture-notes/mathdisc-lect01-intro/" class="md-nav__link">
+        MathDisc-Lecture01
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          FAIR Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          FAIR Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Preface/" class="md-nav__link">
+        Preface
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_01/" class="md-nav__link">
+        1. Why FAIR training & training materials?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_02/" class="md-nav__link">
+        2. Structure materials for FAIRness
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          3. Getting ready to create your materials or reuse
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        3. Getting ready to create your materials or reuse
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-experiences" class="md-nav__link">
+    Learning Experiences
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Experiences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving" class="md-nav__link">
+    LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-list-the-long-term-implications-in-terms-of-fair-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: List the (long-term) implications in terms of FAIR of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases" class="md-nav__link">
+    LO: Compare the advantages and disadvantages of the platforms in each of the four phases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-explain-how-to-interpret-fair-principles" class="md-nav__link">
+    LO: For each phase, explain how to interpret FAIR principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities" class="md-nav__link">
+    LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-documentingjustifying-their-choices-for-a-given-learning-platform" class="md-nav__link">
+    LO: Documenting/justifying their choices for a given learning platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving_1" class="md-nav__link">
+    LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms_1" class="md-nav__link">
+    LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-list-the-long-term-implications-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: List the long-term implications of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases_1" class="md-nav__link">
+    LO: Compare the advantages and disadvantages of the platforms in each of the four phases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-explain-how-to-interpret-fair-principles_1" class="md-nav__link">
+    LO: For each phase, explain how to interpret FAIR principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities_1" class="md-nav__link">
+    LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-documentingjustifying-their-choices-for-a-given-learning-platform_1" class="md-nav__link">
+    LO: Documenting/justifying their choices for a given learning platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_04/" class="md-nav__link">
+        4. Using metadata to describe training materials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_05/" class="md-nav__link">
+        5. Get a persistent identifier for your training material
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_06/" class="md-nav__link">
+        6. Make it accessible
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_07/" class="md-nav__link">
+        7. Make it reusable
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_08/" class="md-nav__link">
+        8. Licensing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_09/" class="md-nav__link">
+        9. Boosting discoverability
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_10/" class="md-nav__link">
+        10. Recognition, acknowledgment, authorship
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Blog Posts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Blog Posts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../posts/" class="md-nav__link">
+        Posts index by tags
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          Year 2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Year 2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../posts/2023-01-21-sample-blog-post-title/" class="md-nav__link">
+        Sample Blog Post Title
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../keywords/" class="md-nav__link">
+        Keywords list
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-experiences" class="md-nav__link">
+    Learning Experiences
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Experiences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving" class="md-nav__link">
+    LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-list-the-long-term-implications-in-terms-of-fair-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: List the (long-term) implications in terms of FAIR of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases" class="md-nav__link">
+    LO: Compare the advantages and disadvantages of the platforms in each of the four phases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-explain-how-to-interpret-fair-principles" class="md-nav__link">
+    LO: For each phase, explain how to interpret FAIR principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities" class="md-nav__link">
+    LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-documentingjustifying-their-choices-for-a-given-learning-platform" class="md-nav__link">
+    LO: Documenting/justifying their choices for a given learning platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving_1" class="md-nav__link">
+    LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms_1" class="md-nav__link">
+    LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-list-the-long-term-implications-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms" class="md-nav__link">
+    LO: List the long-term implications of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases_1" class="md-nav__link">
+    LO: Compare the advantages and disadvantages of the platforms in each of the four phases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-explain-how-to-interpret-fair-principles_1" class="md-nav__link">
+    LO: For each phase, explain how to interpret FAIR principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities_1" class="md-nav__link">
+    LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-documentingjustifying-their-choices-for-a-given-learning-platform_1" class="md-nav__link">
+    LO: Documenting/justifying their choices for a given learning platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../../keywords/#types-of-training-materials" class="md-tag">Types of training materials</a>
+      
+    
+      
+      
+        <a href="../../keywords/#training-development-platform" class="md-tag">Training Development platform</a>
+      
+    
+      
+      
+        <a href="../../keywords/#archiving" class="md-tag">Archiving</a>
+      
+    
+      
+      
+        <a href="../../keywords/#collaborative-development" class="md-tag">Collaborative development</a>
+      
+    
+      
+      
+        <a href="../../keywords/#repository" class="md-tag">Repository</a>
+      
+    
+      
+      
+        <a href="../../keywords/#github" class="md-tag">GitHub</a>
+      
+    
+      
+      
+        <a href="../../keywords/#markdown" class="md-tag">Markdown</a>
+      
+    
+      
+      
+        <a href="../../keywords/#version-control" class="md-tag">Version control</a>
+      
+    
+      
+      
+        <a href="../../keywords/#content-management" class="md-tag">Content management</a>
+      
+    
+      
+      
+        <a href="../../keywords/#technological-platform" class="md-tag">Technological platform</a>
+      
+    
+  </nav>
+
+
+
+  
+  
+
+
+  <h1>3. Getting ready to create your materials or reuse</h1>
+
+<p><strong>Authors:</strong></p>
+<ul>
+<li>Allegra Via</li>
+<li>Lisanna Paladin <a href="https://orcid.org/0000-0003-0011-9397"><span class="twemoji"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A6CE39;}
+	.st1{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/>
+<g>
+	<path class="st1" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/>
+	<path class="st1" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5
+		c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/>
+	<path class="st1" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1
+		C84.2,46.7,88.7,51.3,88.7,56.8z"/>
+</g>
+</svg></span></a></li>
+<li>Hélène Chiapelo </li>
+</ul>
+<h2 id="description">Description</h2>
+<p>Here, we will describe a few platforms that can be used to host and share your materials in all four phases of their life cycle (development, delivery, sharing, and archiving), thus ensuring a higher degree of FAIRness. The platforms we will discuss are: Google Suite, GitHub and GitLab, Zenodo, Learning Management systems. We chose them as they are free, they include different features, and they are very commonly used in training. We will see which platforms are better to use in each phase of materials life cycle and why and what are the pros and cons of each platform according to FAIR principles.</p>
+<div class="admonition info">
+<p class="admonition-title">Learning outcomes</p>
+<p><strong>At the end of this chapter you should be able to:</strong></p>
+</div>
+<ol>
+<li>Describe the four phases of training materials life cycle (development, running course, sharing, archiving) </li>
+<li>Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS) </li>
+<li>List the (long-term) implications in terms of FAIR of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)</li>
+<li>Compare the advantages and disadvantages of the platforms in each of the four phases</li>
+<li>For each phase, explain how to interpret FAIR principles</li>
+<li>For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities</li>
+<li>Document/justify their choices for a given learning platform</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Learners are expected to have done Chapter 1 &amp; 2 and understand the need for FAIRifying their training materials and/or building their training materials FAIR from the beginning
+From Chapter 2, be aware of what types of material they have or will have (lectures, exercises, video, datasets etc.). </p>
+<h2 id="learning-experiences">Learning Experiences</h2>
+<h4 id="lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving">LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)</h4>
+<ol>
+<li>Lecture describing the four phases of training materials life cycle. 
+<div class="highlight"><pre><span></span><code>Supporting materials:
+- Narrative in the handbook
+- Annotated slides for the delivery
+</code></pre></div></li>
+<li>(Tentative) Exercise: learners describe what they currently do with their materials in each of the four phases. 
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+</ol>
+<h4 id="lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms">LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)</h4>
+<ol>
+<li>Brief narrative presenting the different platforms
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+<li>Exercise: share in groups which ones you use / test quickly those you never used. 
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+</ol>
+<h4 id="lo-list-the-long-term-implications-in-terms-of-fair-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms">LO: List the (long-term) implications in terms of FAIR of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)</h4>
+<ol>
+<li>Exercise: in groups, learners discuss what could be the implications in terms of FAIR of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS) and write the outcomes of their discussion in a shared document (the document will contain a table listing the technologies in the first column and empty cells in the second column for the implications).<br />
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+<li>Learners compare their table with the table provided in the chapter, where some possible implications are provided. </li>
+</ol>
+<h4 id="lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases">LO: Compare the advantages and disadvantages of the platforms in each of the four phases</h4>
+<ol>
+<li>Exercise: in groups, learners write  the advantages and disadvantages of the platforms in each of the four phases in a shared Doc. They compare and discuss their results with the table “Pros &amp; Cons” provided in the chapter.
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+</ol>
+<h4 id="lo-for-each-phase-explain-how-to-interpret-fair-principles">LO: For each phase, explain how to interpret FAIR principles</h4>
+<ol>
+<li>Narrative explaining the table structure and providing examples for each couple of dimensions
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+<li>Exercise: Fill the Phases x FAIR table. </li>
+</ol>
+<h4 id="lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities">LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities</h4>
+<ol>
+<li>Brief narrative explaining why to focus on the user’s needs
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+<li>Exercise: Highlight the more important columns of table 1.2 and 1.3 and fill those.
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+</ol>
+<h4 id="lo-documentingjustifying-their-choices-for-a-given-learning-platform">LO: Documenting/justifying their choices for a given learning platform</h4>
+<ol>
+<li>Exercise: justify the choice of one or multiple platforms.
+<div class="highlight"><pre><span></span><code>Supporting materials:
+</code></pre></div></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>Once you have identified what learning experiences (lecture, hands on, exercises, work in groups, etc.), are needed to achieve the learning outcomes of your lesson / course and chosen the most appropriate and FAIR support(s) for the delivery of each of them (e.g. slide deck and/or video for the lecture, pdf for the hands on, shared notes for the work in groups, etc.), you should start considering where you will develop your materials (locally on your computer? or will you rather use a web platform/repository?), from where you will deliver them, how to share them with learners and how you will archive them for recognition and reuse by other instructors.</p>
+<p>You might decide to develop your materials locally, on your computer, deliver them from your computer (e.g. projecting your local powerpoint), share them by email with learners and archive them on your hard disk and send them to other instructors by email upon request. Despite you might feel comfortable with this “old fashion” approach, you must be aware it is the least FAIR possible. FAIR principles will have a different degree of importance in each of the four phases of the material life cycle (development, delivery, sharing, and archiving. 
+For example, </p>
+<p>Here, we will describe a few platforms that can be used to host and share your materials in all four phases of their life cycle (development, delivery, sharing, and archiving),  thus ensuring a higher degree of FAIRness. 
+The platforms we will discuss are: Google Suite, GitHub and GitLab, Zenodo, Learning Management systems. We chose them as they are free, they include different features, and they are very commonly used in training. We will see which platforms are better to use in each phase of materials life cycle and why and what are the pros and cons of each platform according to FAIR principles.</p>
+<h3 id="lo-describe-the-four-phases-of-training-materials-life-cycle-development-running-course-sharing-archiving_1">LO: Describe the four phases of training materials life cycle (development, running course, sharing, archiving)</h3>
+<p>Minimum content to achieve the LO: 
+The training materials life cycle is made up of four phases: development, delivery, sharing, and archiving. </p>
+<p><strong>Phase 1 - Development</strong>
+You may choose to develop your materials locally, on your computer, or you may decide to use a web platform. There are multiple  advantages of using a web platform:
+- Collaborative development
+- Develop from everywhere at any time
+- Back up
+- Start structuring your materials already for the delivery and sharing phases</p>
+<p><strong>Phase 2 - Delivery</strong>
+You may decide to deliver your materials from your computer, e.g. projecting slides that you stored locally. However, working on a web platform will allow you to […].</p>
+<p><strong>Phase 3 - Sharing</strong></p>
+<p><strong>Phase 4 - Archiving</strong></p>
+<h3 id="lo-describe-how-to-use-the-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms_1">LO: Describe how to use the Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)</h3>
+<p>Minimum content to achieve the LO: 
+- Google Suite is a Cloud share where people can also work collaboratively, organised in files and folders. It includes different types of documents (slides, sheets, docs). It automatically saves a history of edits for each file, versions can be named to bookmark significant stages. 
+- GitHub and GitLab are git based platforms. Git is a version control system.  The common usage of the two platforms would be to sync a local repository with a remote one, which can in turn be cloned and synced from others. Git includes merging/branching/solving conflicts solutions that facilitate collaboration. GitHub and GitLab (the web platforms) include additional features like issues and actions (not covered in detail).
+- Zenodo is a platform to upload materials of different formats and annotate them with metadata. Each upload corresponds to one version which once uploaded cannot be edited. Uploading to Zenodo allows the assignment of a DOI. 
+- Learning management systems are applications to support the learning, sometimes including assessment and other personalised features. “Moodles” (e.g. Coursera) are LMSs. Usually they have standardised metadata and self-learning features. The materials are not always downloadable.</p>
+<p>Learning experience:
+Exercise: think about / share in groups which ones you used in the past and test quickly those you never used to answer the following questions:
+- Do you need an account to access the platforms? Does your account need permissions to view someone else’s project?
+- How do you search for someone else’s project on the platform? Does the search include parameters, e.g. date of creation? 
+- How would you add a new project? Is there an option to make it private or accessible only to selected users?
+- In which of the four phases (development, delivery, sharing, archiving) will the platform “accept” your project? Multiple answers are possible.</p>
+<h3 id="lo-list-the-long-term-implications-of-choosing-technologies-such-as-google-suite-githubgitlab-zenodo-a-web-portal-and-a-learning-management-system-lms">LO: List the long-term implications of choosing technologies such as Google Suite, GitHub/GitLab, Zenodo, a web portal and a Learning Management System (LMS)</h3>
+<h3 id="lo-compare-the-advantages-and-disadvantages-of-the-platforms-in-each-of-the-four-phases_1">LO: Compare the advantages and disadvantages of the platforms in each of the four phases</h3>
+<h3 id="lo-for-each-phase-explain-how-to-interpret-fair-principles_1">LO: For each phase, explain how to interpret FAIR principles</h3>
+<p>Recap of the four phases:
+- Materials development (collaborative or not),
+- Consultation of the training materials by your learners during the course delivery,
+- Sharing the training materials with learners and potential trainers after completion,
+- Archiving the training materials to provide long-term reference.</p>
+<p>Minimum content to achieve the LO: 
+Take into consideration that most of these platforms are not specifically designed for training materials.
+The platforms shown are differently fit for the different phases, e.g. the Google Suite allows easy collaborative development but, because it is not possible to search for projects that our account is not linked to, it strongly limits the possibilities of sharing. 
+Moreover, the platforms might support in different ways the FAIR principles (Findable, Accessible, Interoperable, Reusable) application to training materials, e.g. Zenodo supports findability of materials through rich metadata but the interoperability of these materials (how easy it is to modify, integrate or extend them) strongly depends on the format they are uploaded in. 
+In turn, also the FAIR principles are differently applicable to the four phases, e.g. training materials being findable in the development phase implies being findable by other potential trainers interested in contributing to the development, while in the sharing phase implies being findable to other potential trainers interested in consulting them after completion, for reuse. </p>
+<p>Potentially, one could compile a three dimensional table to discuss this topic, where the dimensions are: the training platforms, the four letters of FAIR, and the four phases of a project development. In the cells, one could add considerations about if the two dimensions are one fit to the other, and why. The table, decomposed in three two-dimensional tables and pre-filled with the previous examples, could look as follows.  </p>
+<p><strong>Table 1.1 Phases x Platforms</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Development</th>
+<th>Running course</th>
+<th>Sharing</th>
+<th>Archiving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Suite</td>
+<td>YES, easy collaborative development, automatic backup and versioning</td>
+<td></td>
+<td>NO, no way of searching training materials from others</td>
+<td></td>
+</tr>
+<tr>
+<td>GitHub and GitLab</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Zenodo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Coursera (LMSs)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1.2 FAIR x Platforms</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Findable</th>
+<th>Accessible</th>
+<th>Interoperable</th>
+<th>Reusable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Suite</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GitHub and GitLab</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Zenodo</td>
+<td>YES, rich metadata and search functions</td>
+<td></td>
+<td>NO, if materials are uploaded in non-editable formats</td>
+<td></td>
+</tr>
+<tr>
+<td>Coursera (LMSs)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Google Suite</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1.3 Phases x FAIR</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Development</th>
+<th>Running course</th>
+<th>Sharing</th>
+<th>Archiving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Findable</td>
+<td>YES, if the aim is to involve other trainers in the development process</td>
+<td></td>
+<td>YES, to allow other potential trainers to reuse the materials or students to access them after the course</td>
+<td></td>
+</tr>
+<tr>
+<td>Accessible</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Interoperable</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reusable</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Learning experience:
+Exercise: Fill (alone or in groups) table 1.3, “Phases x FAIR”. </p>
+<h3 id="lo-for-each-phase-identify-platforms-that-best-comply-with-the-fair-principles-according-to-users-needs-and-priorities_1">LO: For each phase, identify platforms that best comply with the FAIR principles according to user’s needs and priorities</h3>
+<p>In the discussion above, you might be more interested in considering a specific phase (because, for example, that’s the phase where your course is in) or a specific letter of FAIR (because, for example, you have been asked by your institution to improve that aspect of your training materials). Your aim is to understand which platforms would better comply with either one or the other, so basically to focus on specific row(s) of the other two tables. There is not one solution that works for all cases, and FAIRification is a process that starts from your priorities and implies the adoption of increasingly better practices to achieve them, and enhance the quality of your training materials. </p>
+<p>Learning experience: Take the time to consider your needs.</p>
+<p>Exercise: Highlight the columns in tables 1.2 “Phases x Platforms” and 1.3 “FAIR x Platforms” that you consider more relevant for your specific case. Fill each column consulting all the platforms, especially those that you never used. </p>
+<h3 id="lo-documentingjustifying-their-choices-for-a-given-learning-platform_1">LO: Documenting/justifying their choices for a given learning platform</h3>
+<p>Learning experience: Justify your choices.
+Exercise: By looking at the tables you filled in the previous learning activity, choose one platform (or more, for different phases). Justify your choice by comparing the advantages and disadvantages of that platform with the others.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        
+  <footer class="md-footer">
+    
+      <nav class="md-footer__inner md-grid" aria-label="">
+        
+          <a href="../chapter_02/" class="md-footer__link md-footer__link--prev" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                2. Structure materials for FAIRness
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../chapter_04/" class="md-footer__link md-footer__link--next" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                4. Using metadata to describe training materials
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          
+          Web Documentation Setup By
+          <a href="" target="_blank" rel="noopener">
+            
+          </a>
+          
+        </div>
+        <div class="md-social">
+  
+</div>
+      </div>
+    </div>
+  </footer>
+  
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
