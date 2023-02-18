@@ -46,7 +46,7 @@ Below sections are organized as follow: current courses, course/lecture notes, p
  
 ## Blog Posts
  
-### Year 2023":
+### Year 2023:
 - [Sample Blog Post Title](posts/2023-01-21-sample-blog-post-title.md)
  
  
